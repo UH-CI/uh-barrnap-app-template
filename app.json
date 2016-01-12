@@ -1,0 +1,44 @@
+{
+  "name": "uh-barrnap",
+  "parallelism": "PTHREAD",
+  "version": "0.6",
+  "label": "BARRNAP at UH",
+  "shortDescription": "BARRNAP at UH",
+  "longDescription": "BARRNAP at UH",
+  "deploymentPath": "/lus/scratch/seanbc/apps/uh-barrnap-0.6",
+  "deploymentSystem": "sftp.lustre.storage.uhhpc1.its.hawaii.edu",
+  "executionSystem": "sb.execute.uhhpc1.its.hawaii.edu",
+  "executionType": "CLI",
+  "templatePath": "wrapper.sh",
+  "testPath": "test/test.sh",
+  "tags": [
+    "demo"
+  ],
+  "ontology": [
+  ],
+  "inputs": [
+    {
+      "id": "input1",
+      "details": {
+        "label": "Input file",
+        "description": "The Barrnap input file"
+      },
+       "semantics":{
+         "ontology":[],
+         "minCardinality":1,
+         "fileTypes":[
+         "TEXT-0"
+        ]
+        },
+         "value": {
+          "default": "agave://sftp.lustre.storage.uhhpc1.its.hawaii.edu/input.barrnap",
+          "required": false,
+          "visible": true,
+          "validator": null
+         }
+    }
+  ],
+  "parameters": [
+    
+  ]
+}
