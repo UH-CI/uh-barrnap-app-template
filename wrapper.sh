@@ -24,7 +24,7 @@ FILENAME=${INPUT##*/}
 
 # Check for existence of input file...
 if [ -e input/$FILENAME ]; then
-
+	source ~/.bash_profile #just to be safe
     module load prod/barrnap0.6
 	
 	barrnap input/$FILENAME > output/barrnap-app_output.txt
